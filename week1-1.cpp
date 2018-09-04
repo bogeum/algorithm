@@ -14,17 +14,11 @@ string solution(int a, int b){
     int days[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // 각 월에 며칠씩 있는지
     string answer[7] = {"FRI", "SAT", "SUN", "MON", "TUE", "WED", "THU"}; // 1월 1일은 금요일 (금요일부터 시작)
     int sum = 0;
-    if(a<13){ // 1~12월이 맞는지
-        if(b<days[a-1]){ // a월 안에 있는 날짜인지
-            for(int i=0;i<a-1;i++){ // 해당하는 달의 날짜들을 포함하지 않아야하므로 a-1
-                sum += days[i];
-            }
-            return answer[(sum+b-1)%7]; // 해당하는 일을 가리키기 위해 b-1
-        }
-    } else{
-        return 0;
+    
+    for(int i=0;i<a-1;i++){ // 해당하는 달의 날짜들을 포함하지 않아야하므로 a-1
+        sum += days[i];
     }
-    return 0;
+    return answer[(sum+b-1)%7]; // 해당하는 일을 가리키기 위해 b-1
 }
 
 /*
