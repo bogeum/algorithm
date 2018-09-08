@@ -23,7 +23,7 @@ vector<int> solution(vector<int> arr, int divisor) {
     sort(answer.begin(), answer.end()); // 오름차순으로 정렬
     
     if(answer.empty()){ // 비어있는지 확인
-        answer.insert(answer.begin(), -1); // 비었다면 -1 삽입;
+        answer.insert(answer.begin(), -1);
     }
     return answer;
 }
