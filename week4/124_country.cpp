@@ -21,15 +21,14 @@ string solution(int n) {
         n = n / 3;
         if(digit == 0) {
             n = n - 1;
-            digit = 4;
+            digit = 4;ß
         }
-        cout << digit << endl;
-        answer += (char)digit;  // 않이 왜 answer에 안들어감?
+        answer = to_string(digit) + answer;  // 않이 왜 answer에 안들어감?
     }
     
     return answer;
 }
-
+//
 //int main(){
 //    cout << solution(10) << endl;
 //    return 0;

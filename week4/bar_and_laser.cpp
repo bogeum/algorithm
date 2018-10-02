@@ -6,6 +6,7 @@
 //  Copyright © 2018년 bogeum. All rights reserved.
 //
 
+#include <iostream>
 #include <string>
 #include <stack>
 
@@ -31,3 +32,8 @@ int solution(string str) {
     
     return result;
 }
+
+//int main(){
+//    cout << solution("()(((()())(())()))(())") << endl;
+//    return 0;
+//}

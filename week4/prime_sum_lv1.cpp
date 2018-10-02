@@ -24,7 +24,7 @@ long long solution(int N) {
     return sum;
 }
 
-int main(){
-    cout<<solution(7)<<endl;
-    return 0;
-}
+//int main(){
+//    cout<<solution(7)<<endl;
+//    return 0;
+//}
